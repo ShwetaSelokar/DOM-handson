@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+    <h2>que 1. Write the code to access element which is having id as "text"</h2>
+    <b> Ans:   let id = document.getElementById("text");
+                 console.log(id); </b>
+     <p id="text"> Welcome to prepbytee...</p>
+    </pre>
+
+    <hr>
+
+    <pre>
+     <h2> que 2. Write the code to access element which is having tag as "h1"</h2>   
+     <b>Ans: const tagName = document.getElementsByTagName('h1')
+            console.log(tagName[1].innerText);</b> 
+     <h1>Hello Shweta Here...1</h1>
+     <h1>Hello Shweta Here...2</h1>
+     <h1>Hello Shweta Here...3</h1>
+     <h1>Hello Shweta Here...4</h1>
+    </pre>
+
+    <hr>
+    
+    <pre>
+        <h2> que 3. Write the code to access element which is having class as "box"</h2>
+        <b>Ans: let className = document.getElementsByClassName('box');
+            console.log(className[3].innerText);</b>
+         <div class="box">box 1</div>
+        <div class="box"> box2</div>
+        <div class="box"> box 3</div>
+        <div class="box"> box 4</div>
+    </pre>
+
+    <hr>
+
+    <pre>
+        <h2> que 4. "h1 Hello h1
+
+            Change the heading from ""Hello"" to ""Hello World"" using DOM functions"</h2>
+        
+        <b>Ans: const text=document.getElementById('heading');
+                addEventListener("click", function(){
+                text.innerText= 'Hello World';
+                })</b>
+        <h1 id="heading1" >Hello</h1>
+    </pre>
+
+    <hr>
+
+    <pre>
+        <h2>que 5. Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</h2>
+        <b>Ans:function changeText(){
+            let button = document.querySelector('#content');
+            button.innerText='"Welcome to Elevation academy"';
+        }
+        </b>
+        <h1 id="content"> Hello WOrld</h1>
+        <button onclick="changeText()"> Change Text</button>
+    </pre>
+
+    <hr>
+
+    <pre>
+        <h2>que 6." h1 Hello /h1" Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the above given h1 tag using DOM functions"</h2>
+        <b>ANs:const text1=document.getElementById('heading');
+            addEventListener("click", function(){
+            text1.innerText= 'Welcome to Elevation academy';
+            text1.style.color='red';
+         })
+          </b>
+        <h1 id="heading"> Hello WOrld</h1>
+    </pre>
+
+    <hr>
+
+    <pre>
+        <h2>que 7. Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.</h2>
+        <b>Ans: function changeFlexDirection() {
+            let changeDimension = document.getElementsByClassName('parentCard');
+            changeDimension[0].style.flexDirection = 'column'
+          }</b>
+         
+        <div class="parentCard">
+            <div class="childCard"></div><br>
+            <div class="childCard"></div><br>
+            <div class="childCard"></div><br>
+            
+        </div>
+        <button class="changeFlex" onclick="changeFlexDirection()">Change Flex direction</button>
+    </pre>
+
+    <hr>
+
+    <pre>
+        <h2>que 8. What’s the difference between window vs document?</h2>
+        <b><p><strong>Window</strong></p></b>
+            <ul type="disc">
+                <li>It represents the document loaded inside the window or browser.</li>
+                <li>The properties related to it are stored in the document object.</li>
+                <li>It is loaded after the loading window because the window contains a document.</li>
+                <li>It is the root element of the document object model.</li>
+                <li>It is an object of the window.</li>
+                <li>We can not access windows objects properties inside the document.</li>
+            </ul>
+                 <br>
+                <b>   <p><strong>Document</strong></p> </b>
+              <ul type="disc">
+                <li>It represents the browser window in which you are seeing the content.</li>
+                <li>The properties related to it are stored in the window object.
+
+                </li>
+                <li>It is loaded before the document because of the window container document.</li>
+                <li>It is an object of the browser.</li>
+                <li>We can access document object properties inside the window.</li>
+            </ul>
+          
+    </pre>
+
+    <hr>
+
+    <pre>
+        <h2> que 9.Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</h2>
+        <b>Ans:</b>
+        <div class="container digital" id="clock">
+        </div>
+    </pre>
+
+    <hr>
+     
+    <pre>
+        <h2>que 10. Guess Game</h2>
+        <b>Ans:   <a href="./index2.html">  Guess Game </b> </a>
+    </pre>
+    
+    
+    <script src="./index.js"> </script> 
+</body>
+</html>
